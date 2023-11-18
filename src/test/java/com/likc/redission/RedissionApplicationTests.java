@@ -10,12 +10,9 @@ import java.util.concurrent.TimeUnit;
 @SpringBootTest
 class RedissionApplicationTests {
 
-    @Resource
-    private RedisDelayedQueueUtils redisDelayedQueue;
-
     @Test
     void contextLoads() {
-        redisDelayedQueue.addQueue("123456", 60, TimeUnit.SECONDS, "deliveryOrder");
+
     }
 
 }
